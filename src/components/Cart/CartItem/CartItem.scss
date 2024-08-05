@@ -1,5 +1,6 @@
 .cart-products {
     flex-grow: 1;
+    overflow: auto;
 
     .search-result-item {
         padding: 20px 15px;
@@ -43,7 +44,7 @@
                 font-weight: 600;
 
                 .highlight {
-                    color: #8e2de2;
+                    color: rgba(0, 0, 0, 0.5);
                 }
             }
 
@@ -91,4 +92,11 @@
             background-color: rgba(0, 0, 0, 0.05);
         }
     }
+}
+
+.total {
+    width: 100vw;
+    // height: 100%;
+    display: flex;
+    justify-content: right;
 }

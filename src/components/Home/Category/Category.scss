@@ -2,9 +2,39 @@
 
 .shop-by-category {
     margin: 25px 0;
+    margin-top: 70px;
 
     @include md {
         margin: 50px 0;
+        margin-top: 70px;
+    }
+
+    .category-heading {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include md {
+            margin-bottom: 35px;
+            // margin-left: 50px;
+            font-size: 24px;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 5px;
+            width: 50px;
+            height: 3px;
+            background-color: #8e2de2;
+
+            @include md {
+                margin-top: 10px;
+            }
+        }
     }
 
     .categories {
@@ -12,6 +42,8 @@
         flex-flow: wrap;
         gap: 10px;
         justify-content: center;
+
+
 
         .category {
             background-color: black;
@@ -23,14 +55,15 @@
                 width: calc(22% - 10px);
             }
 
-            img {
+            .category_img {
                 width: 100%;
                 display: block;
+                height: 100%;
                 transition: all ease 0.3s;
             }
 
             &:hover {
-                img {
+                .category_img {
                     transform: scale(1.2);
                 }
             }

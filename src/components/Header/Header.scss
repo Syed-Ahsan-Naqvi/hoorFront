@@ -4,10 +4,13 @@
     width: 100%;
     padding: 0 20px;
     z-index: 99;
-    background-color: #212121;
-    color: white;
+    // background-color: #212121;
+    color: black;
+    position: relative;
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.1);
+    // background-color: rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
 
     @include md {
         padding: 0 40px;
@@ -17,12 +20,32 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 50px;
+        height: 70px;
         max-width: 1200px;
         margin: 0 auto;
 
         @include md {
             height: 80px;
+        }
+    }
+
+    .scr {
+        list-style-type: none;
+        display: block;
+
+        @include md {
+            display: none;
+        }
+
+        li {
+            font-size: 23px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
 
@@ -37,9 +60,11 @@
 
         li {
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 200;
             text-transform: uppercase;
             cursor: pointer;
+            opacity: 0.8;
+            letter-spacing: 1px;
 
             &:hover {
                 opacity: 0.6;
@@ -52,6 +77,10 @@
         font-weight: 700;
         cursor: pointer;
 
+        img {
+            width: 200px;
+        }
+
         @include md {
             font-size: 34px;
             position: absolute;
@@ -63,7 +92,7 @@
     .right {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
 
         @include md {
             gap: 25px;
@@ -88,7 +117,8 @@
             span {
                 min-width: 20px;
                 text-align: center;
-                background: #8e2de2;
+                color: white;
+                background: rgba(0, 0, 0, 0.8);
                 padding: 2.5px;
                 position: absolute;
                 top: -5px;
@@ -101,12 +131,12 @@
     }
 
     &.sticky-header {
-        background-color: #212121;
-        color: white;
+        background-color: whitesmoke;
+        color: black;
         position: sticky;
         top: 0;
         transform: translateY(-60px);
-        animation: StickyHeader 0.3s ease forwards;
+        animation: StickyHeader 0.6s ease forwards;
     }
 }
 

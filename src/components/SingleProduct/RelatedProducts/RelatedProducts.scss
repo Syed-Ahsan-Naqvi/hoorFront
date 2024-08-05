@@ -1,0 +1,10 @@
+@import "../../../css-config/mixins.scss";
+
+
+.related-products {
+    margin-top: 0px;
+
+    @include md {
+        margin-top: 250px;
+    }
+}

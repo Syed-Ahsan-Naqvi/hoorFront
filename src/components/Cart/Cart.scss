@@ -31,17 +31,19 @@
         animation: slideCartWindow 0.3s ease forwards;
 
         @include md {
-            width: 340px;
+            width: 450px;
         }
 
         .cart-header {
             display: flex;
+            // background-image:;
+            background-color: whitesmoke;
             align-items: center;
             justify-content: flex-end;
             padding: 20px 15px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-            .heading {
+            .cart-heading {
                 flex-grow: 1;
                 margin-bottom: 0;
                 font-size: 20px;
@@ -95,8 +97,8 @@
                 cursor: pointer;
                 font-size: 13px;
                 color: white;
-                background: #8e2de2;
-                border-bottom: 3px solid #6516aa;
+                background: rgba(0, 0, 0, 0.8);
+                border-bottom: 3px solid rgba(0, 0, 0, 0.8);
 
                 svg {
                     margin-right: 10px;
@@ -108,7 +110,7 @@
             border-top: 1px solid rgba(0, 0, 0, 0.1);
 
             .subtotal {
-                padding: 20px 15px;
+                padding: 15px 15px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 display: flex;
                 justify-content: space-between;
@@ -120,13 +122,18 @@
                     text-transform: uppercase;
 
                     &.total {
-                        color: #8e2de2;
+                        color: rgba(0, 0, 0, 0.5);
+                        // background: linear-gradient(to right, rgb(233, 157, 170), #b1aca9);
+                        // -webkit-background-clip: text;
+                        // -webkit-text-fill-color: transparent;
+                        // color: linear-gradient(to bottom right, rgb(233, 157, 170), pink);
+
                     }
                 }
             }
 
             .button {
-                padding: 20px 15px;
+                padding: 10px 15px;
 
                 .checkout-cta {
                     outline: 0;
@@ -139,8 +146,9 @@
                     cursor: pointer;
                     font-size: 16px;
                     color: white;
-                    background: #8e2de2;
-                    border-bottom: 3px solid #6516aa;
+                    background: rgba(0, 0, 0, 0.8);
+                    // background-image: linear-gradient(to bottom right, rgb(233, 157, 170), pink);
+                    border-bottom: 3px solid rgba(0, 0, 0, 1);
                     text-transform: uppercase;
 
                     svg {

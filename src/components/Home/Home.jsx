@@ -1,21 +1,29 @@
-import React from 'react'
-import "./Home.scss"
-import Banner from "./Banner/Banner"
-import Category from "./Category/Category"
-import Products from "../Products/Products"
+import React from 'react';
+import "./Home.scss";
+import Category from "./Category/Category";
+import Products from "../Products/Products";
+import Slider from "./Slider/Slider";
+// import Newsletter from '../Footer/Newsletter/Newsletter.jsx';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const Home = () => {
+    // useEffect(() => {
+    // AOS.init({ duration: 1000, once: true });
+    // }, []);
+
     return (
         <div>
-            <Banner />
+            <Slider />
             <div className="main-container">
                 <div className="layout">
                     <Category />
-                    <Products headingText="Popular Products" />
+                    <Products headingText={"Popular Products"} />
                 </div>
             </div>
+            {/* <Newsletter /> */}
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

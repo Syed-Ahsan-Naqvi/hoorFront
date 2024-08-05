@@ -1,0 +1,52 @@
+@import "../../../css-config/mixins.scss";
+
+.policy-section {
+    margin-bottom: 55px;
+
+    .policy-heading {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .policy-desc {
+        width: 100%;
+        padding: 0px 15px;
+
+        @include md {
+            padding: 0px 100px;
+        }
+
+        .policy-desc-heading {
+            font-size: 20px;
+
+            @include md {
+                font-size: 25px;
+            }
+        }
+
+
+
+        .policy-paragraph {
+            text-align: justify;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+
+            @include md {
+                font-size: 16px;
+                font-weight: 200;
+            }
+
+            li::marker {
+                color: black;
+            }
+
+            .bold {
+                font-size: 18px;
+                font-weight: 200;
+                color: black;
+            }
+        }
+
+
+    }
+}

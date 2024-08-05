@@ -1,0 +1,50 @@
+@import "../../../css-config/mixins.scss";
+
+// FAQ.scss
+.faq {
+    width: 80%;
+    margin: 45px auto;
+    font-family: Arial, sans-serif;
+
+    p {
+        text-align: start;
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 17px;
+
+        @include md {
+            text-align: center;
+            font-size: 30px;
+        }
+
+    }
+
+    .faq-item {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            font-size: 18px;
+            color: #333;
+
+            &:hover {
+                color: #007BFF;
+            }
+
+            .faq-icon {
+                font-size: 24px;
+                margin-left: 10px;
+            }
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+    }
+}

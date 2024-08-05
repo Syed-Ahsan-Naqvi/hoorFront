@@ -2,10 +2,20 @@
 
 .products-container {
     margin: 50px 20px;
+    // background-color: aqua;
+    // display: flex;
+    // gap: 10px;
 
     @include md {
         margin: 75px 20px;
     }
+
+    .productsHeading {
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
 
     .sec-heading {
         margin-bottom: 20px;
@@ -23,9 +33,10 @@
             content: "";
             display: block;
             margin-top: 5px;
+            background-color: #8e2de2;
             width: 50px;
             height: 3px;
-            background-color: #8e2de2;
+            // background-color: #8e2de2;
 
             @include md {
                 margin-top: 10px;
@@ -37,9 +48,11 @@
         display: flex;
         flex-flow: wrap;
         gap: 10px;
+        // background-color: blueviolet;
 
         @include md {
             gap: 20px;
+            // padding-bottom: 70px;
         }
     }
 }
